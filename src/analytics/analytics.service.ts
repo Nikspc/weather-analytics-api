@@ -1,6 +1,5 @@
 import { Injectable, NotFoundException} from '@nestjs/common';
 import axios from 'axios';
-import process from 'process';
 import { PrismaClient } from '@prisma/client';
 
 @Injectable()
@@ -68,4 +67,5 @@ async getSingleCity(name:string) {
         console.error(`Failed to fetch data for city ${name}:`, error);
         throw new NotFoundException('City not found');
     }
+}
 }

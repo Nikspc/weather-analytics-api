@@ -1,4 +1,4 @@
-import Module from "@nestjs/common";
+import {Module} from "@nestjs/common";
 import { AnalyticsService } from "./analytics/analytics.service";
 import { AnalyticsController } from "./analytics/analytics.controller";
 
